@@ -3,7 +3,7 @@ Retry mechanism is now option rich, easy to plugin and supporting all new NodeJS
 
 ## Installation
 ```
-npm install rehit
+npm i rehit
 ```
 ## Usage
 ```
