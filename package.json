@@ -1,0 +1,14 @@
+{
+  "name": "rehit",
+  "version": "1.0.0",
+  "description": "Retry mechanism for Rest APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saikat Bhattacharya",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
