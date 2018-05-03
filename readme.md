@@ -6,7 +6,7 @@ Retry mechanism is now option rich, easy to plugin and supporting all new NodeJS
 npm i rehit
 ```
 ## Usage
-```
+```javascript
 //Packages
 const rehit = require('rehit');
 const axios = require('axios');
@@ -32,7 +32,7 @@ const onFailureRehit = () => {
 
 ```
 ## API
-```
+```javascript
 rehit(api: Promise, count: Number, time: Number, skip: Object, onFailure: Function) => Array
 ```
 - ``` api ``` : The api request should be sent in a promisified manner. For example: ```  axios.get('http://goog1234525.com') ``` .
