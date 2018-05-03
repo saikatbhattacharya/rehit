@@ -4,11 +4,49 @@
   "description": "Retry mechanism for Rest APIs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc ./node_modules/mocha/bin/_mocha"
   },
   "author": "Saikat Bhattacharya",
   "license": "MIT",
   "devDependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  },
+  "keywords": [
+    "retry",
+    "async",
+    "api",
+    "await",
+    "retry-mechanism",
+    "rehit",
+    "api-error",
+    "error handling",
+    "error"
+  ],
+  "dependencies": {
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "include": [
+      "lib/**/*.js",
+      "helper/**/*.js"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "ignore-class-method": "methodToIgnore",
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "cache": true,
+    "all": true,
+    "report-dir": "./coverage"
   }
 }
